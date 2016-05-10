@@ -1,0 +1,9 @@
+.helloWho {
+  margin: 20px auto;
+  width: 25%;
+}
+
+#helloInput {
+  display: block;
+  margin-top: 20px;
+}

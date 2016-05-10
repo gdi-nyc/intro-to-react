@@ -1,0 +1,33 @@
+/** @jsx React.DOM */
+var Parent = React.createClass({
+  getInitialState: function() {
+    return {value: 0}; 
+  },
+  update: function(value) {
+    this.setState({value: value});
+  },
+  render: function () {
+    return (
+      <div className="clickCounter">
+        <h1># Clicks: {this.state.value}</h1>
+        <Child value={this.state.value} onChange={this.update}/>
+      </div>
+    );
+  }
+});
+
+var Child = React.createClass({
+  render: function () {
+    var props = this.props;
+    var onChange = function () {
+      props.onChange(props.value + 1);
+    }
+    return (
+      <button onClick={onChange}>
+        Click me!
+      </button>
+    );
+  }
+});
+
+React.render(<Parent />, document.getElementById('page'));

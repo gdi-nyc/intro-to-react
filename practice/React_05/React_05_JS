@@ -1,0 +1,20 @@
+/** @jsx React.DOM */
+var HelloWho = React.createClass({
+  getInitialState: function() {
+    return {name: 'world'};
+  },
+  handleChange: function(event) {
+    this.setState( {name: event.target.value });
+  },
+  render: function() {
+    var name = this.state && this.state.name;
+    return (
+    	<div className='helloWho'>
+      	<h1>Hello, {name}!</h1>
+      	<input value={name} onChange={this.handleChange} id='helloInput' />
+      </div>
+    )
+  }
+})
+
+React.render(<HelloWho />, document.getElementById("page"));
