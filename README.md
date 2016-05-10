@@ -1,4 +1,4 @@
-## intro-to-react
+# Introduction to React.JS
 
 Materials are hosted and available in this repo, for a 6-part, 2 session class on React.
 
@@ -6,7 +6,7 @@ Materials are hosted and available in this repo, for a 6-part, 2 session class o
 
 This curriculum is adapted from William Hoang's Intro React material, taught by Grace Tan and Aurelia Moser in the New York City Chapter. The course is meant to be taught in two, two-hour sections.
 
-### Course description
+## Course description
 
 React is a Javascript library built by Facebook and Instagram to create user interfaces, self-purported as the "V" (view) in MVC. It's designed to build large applications with mutable data, and you can learn more about its [design and purpose here](https://facebook.github.io/react/blog/2013/06/05/why-react.html).
 
